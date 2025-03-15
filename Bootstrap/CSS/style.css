@@ -1,0 +1,11 @@
+body {
+	background-color: transparent;
+	background-image: inherit;
+
+	display: inline-block;
+	direction: all;
+	border-radius: 40px;
+
+	text-orientation: use-glyph-orientation;
+	text-decoration: all;
+} 

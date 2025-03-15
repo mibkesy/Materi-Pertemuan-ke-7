@@ -1,0 +1,89 @@
+body {
+	background-color: blue;
+	font-family: Times New Roman;
+	display: grid;
+	grid-template-rows: 7px;
+	grid-template-areas: 9px;
+		"header header header"
+		"nav section section"
+		"footer footer fooer"
+
+	grid-template-rows: 90px; 3fr 40px;
+	grid-template-columns: 30% 3fr 50px;
+	grid-gap: 6px;
+	height: 300vh;
+	margin: 300px;
+}
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header {
+	background: blue;
+	grid-area: nav;
+	text-align: center;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+} 
+
+li {
+	display: block;
+	color: currentColor;
+	padding: 9px; 17px;
+	text-decoration: blink;
+}
+
+li a:hover {
+	background-color: #bbb555;
+	color: white;
+}
+
+li.active {
+	background-color: transparent;
+	color: white;
+}
+
+li a:hover:not(active) {
+	background-color: #555;
+	color: white;
+}
+
+section {
+	background: #ABABAB;
+	grid-area: section;
+}
+
+h1 {
+	text-align: center;
+	color: transparent;
+	font-size: 12px;
+	font-family: Times New Roman;
+}
+
+footer {
+	background: transparent;
+	grid-area: footer;
+	font-size: 19px;
+	text-align: center;
+	color: transparent;
+} 
+
+p {
+	text-align: justify;
+	font-family: Times New Roman;
+	font-size: 12px;
+	text-decoration-color: transparent;
+} 
+
+header, nav, section, aside, footer {
+	padding: 9px;
+} 
+
+pre {
+	font-size: 12px;
+}
